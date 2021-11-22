@@ -63,7 +63,9 @@ export default class RideScreen extends Component {
         <View style={styles.upperContainer}>
           <Image source={appIcon} style={styles.appIcon} />
           <Text style={styles.title}>e-ride</Text>
-          <Text style={styles.subtitle}>A Eco-Friendly Ride</Text>
+          <Text style={styles.subtitle} >
+          A Eco-Friendly Ride
+          </Text>
         </View>
         <View style={styles.lowerContainer}>
           <View style={styles.textinputContainer}>
@@ -74,7 +76,7 @@ export default class RideScreen extends Component {
               value={userId}
             />
           </View>
-          <View style={[styles.textinputContainer, { marginTop: 25 }]}>
+          <View style={[styles.textinputContainer, { marginTop: 30 }]}>
 
             <TextInput
               style={styles.textinput}
@@ -87,7 +89,7 @@ export default class RideScreen extends Component {
               style={styles.scanbutton}
 
              // onPress={this.getCameraPermissions()}
-             // onPress={() => this.getCameraPermissions()}
+              onPress={() => this.getCameraPermissions()}
              // onPress={() => this.getCameraPermissions}
              // onPress=() => this.getCameraPermissions()
 
